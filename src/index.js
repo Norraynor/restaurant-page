@@ -2,6 +2,7 @@ import {loadPage} from "./page-loader";
 import {contactPageContent} from "./contact-page";
 import {menuPageContent} from "./menu-page";
 import {homePageContent} from "./initial-page";
+import css from "index.css";
 console.log("this is index.js");
 
 const buttons = document.querySelectorAll(".tabButton");
