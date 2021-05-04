@@ -1,0 +1,82 @@
+html { 
+    background: url("burger.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h3, p{
+  margin: 0;
+}
+
+#headline{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: white;
+    margin: 0 auto;
+    width: 20%;
+}
+* {
+  transition: 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+.tabs {
+  margin: 10px auto 0 auto;
+  max-width: 500px;
+  height: 300px;
+  position: relative;
+}
+.tabs input.tab-toggle {
+  position: absolute;
+  opacity: 0;
+}
+.tabs input.tab-toggle:checked + label {
+  background: transparent;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.tabs input.tab-toggle:checked  {
+  background: transparent;
+}
+.tabs input.tab-toggle:checked + label + .tab {
+  visibility: visible;
+  opacity: 1;
+  background: transparent;
+  color:black;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+  
+}
+.tabs label {
+  float: left;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 3px 3px 0 0;
+  color:black;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+.tabs label:first-of-type + .tab {
+  border-radius: 0 3px 3px 3px;
+}
+.tabs .tabButton {
+  display: block;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 2rem;
+}
+.tabs .tabButton:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .1);
+}
+.tabs .tab {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  top: 56px;
+  left: 0;
+  min-width: 100%;
+  height: 244px;
+  background: white;
+  border-radius: 3px;
+  margin-top: 5px;
+}
