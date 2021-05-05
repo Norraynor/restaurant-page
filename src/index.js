@@ -29,6 +29,10 @@ const loadButtons =(function(){
         buttonArray[i].addEventListener("click",pageLoader)
     }
 })();
+const homeLoader = (function(){
+    const firstLabel = document.querySelector("label");
+    loadPage(firstLabel.nextElementSibling,homePageContent());
+})();
 
 const clearContents = function(){
     const contents = document.querySelectorAll(".content");
