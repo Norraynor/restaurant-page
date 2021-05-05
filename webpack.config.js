@@ -11,8 +11,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
+        include: /src/,
+        sideEffects:true,
         use: [
           'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       },
@@ -32,6 +35,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin(),
-  ],
+    new MiniCssExtractPlugin({filename: 'index.css'}),
+  ]
 };
