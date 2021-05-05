@@ -3,7 +3,6 @@ import {contactPageContent} from "./contact-page";
 import {menuPageContent} from "./menu-page";
 import {homePageContent} from "./initial-page";
 import './index.css';
-console.log("this is index.js");
 
 const buttons = document.querySelectorAll(".tabButton");
 const buttonArray = [...buttons];
